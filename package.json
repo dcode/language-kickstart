@@ -1,0 +1,34 @@
+{
+    "name": "kickstart",
+    "displayName": "language-kickstart",
+    "description": "Syntax highlighting for RedHat kickstart files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "kickstart",
+                "aliases": [
+                    "Kickstart",
+                    "kickstart"
+                ],
+                "extensions": [
+                    ".ks"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "kickstart",
+                "scopeName": "source.kickstart",
+                "path": "./syntaxes/kickstart.json"
+            }
+        ]
+    }
+}
